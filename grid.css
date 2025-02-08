@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+.container{ 
+    width: 100%;
+    background-color: wheat;
+    display: grid;
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "g"
+        "h"
+        "i"
+        "j"
+    ;
+    
+}
+
+@media (min-width:1024px) {
+    .container{
+        
+    grid-template-areas: 
+    "a a b c"
+    "a a d e"
+    "f g j j"
+    "h i j j"
+;
+    }
+}
+
+.container img{
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    padding: 10px;
+    object-fit: cover;
+    object-position: center;
+    /* display: none; */
+} 
+
+.img-a{
+     grid-area: a;
+}
+
+.img-b{
+    grid-area: b;
+}
+
+.img-c{
+    grid-area: c;
+}
+
+.img-d{
+    grid-area: d;
+}
+
+.img-e{
+    grid-area: e;
+}
+
+.img-f{
+    grid-area: f;
+}
+
+.img-g{
+    grid-area: g;
+}
+
+.img-h{
+    grid-area:h;
+}
+
+
+.img-i{
+    grid-area:i;
+}
+
+
+.img-j{
+    grid-area:j;
+}
